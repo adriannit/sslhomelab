@@ -1,0 +1,971 @@
+<div class="my-3 my-md-5">
+    <div id="app-content" class="container">
+        <div id="nginx-proxy">
+            <div class="card">
+                <div class="card-status bg-success"></div>
+                <div class="card-header">
+                    <h3 class="card-title">Proxy Hosts</h3>
+                    <div class="card-options">
+                        <form class="search-form" role="search">
+                            <div class="input-icon">
+                                <span class="input-icon-addon">
+                                    <i class="fe fe-search"></i>
+                                </span>
+                                <input name="source-query" type="text" value="" class="form-control form-control-sm"
+                                    placeholder="Search Host…" aria-label="Search Host…">
+                            </div>
+                        </form>
+                        <a href="#" class="btn btn-outline-secondary btn-sm ml-2 help"><i
+                                class="fe fe-help-circle"></i></a>
+
+                        <a href="#" class="btn btn-outline-success btn-sm ml-2 add-item">Add Proxy Host</a>
+
+                    </div>
+                </div>
+                <div class="card-body no-padding min-100">
+                    <div class="dimmer">
+                        <div class="loader"></div>
+                        <div class="dimmer-content list-region">
+                            <table class="table table-hover table-outline table-vcenter card-table">
+                                <thead>
+                                    <tr>
+                                        <th width="30">&nbsp;</th>
+                                        <th>Source</th>
+                                        <th>Destination</th>
+                                        <th>SSL</th>
+                                        <th>Access</th>
+                                        <th>Status</th>
+
+                                        <th>&nbsp;</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://adrianwxn.go.ro">adrianwxn.go.ro</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 18th April 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://192.168.1.8:8081</div>
+                                        </td>
+                                        <td>
+                                            <div>Let's Encrypt</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #2</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://grafana.home.local">grafana.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 10th October 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://grafana:3000</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #30</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://hass.volag.ro">hass.volag.ro</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 5th September 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://homeassistant.home.local:8123</div>
+                                        </td>
+                                        <td>
+                                            <div>Let's Encrypt</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #21</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://homarr.home.local">homarr.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 23rd August 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://homarr:7575</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #15</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://irc.home.local">irc.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 3rd March 2023
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://thelounge:9000</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #52</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://jellyfin.home.local">jellyfin.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 9th November 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://nuc.home.local:8096</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #44</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://metube.home.local">metube.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 13th September 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://metube:8081</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #23</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://octoprint.home.local">octoprint.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 13th September 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://octoprint:80</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #24</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://portainer.home.local">portainer.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 18th April 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">https://192.168.1.8:9443</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #6</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="http://prometheus.home.local">prometheus.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 11th October 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://prometheus:9090</div>
+                                        </td>
+                                        <td>
+                                            <div>HTTP only</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #33</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://seafile.home.local">seafile.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 25th August 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://seafile:80</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #17</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://seafile.volag.ro">seafile.volag.ro</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 25th August 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://seafile:80</div>
+                                        </td>
+                                        <td>
+                                            <div>Let's Encrypt</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #19</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://speed.home.local">speed.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 10th March 2023
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://openspeedtest:3000</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #53</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://stream.volag.ro">stream.volag.ro</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 23rd July 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://owncast:8080</div>
+                                        </td>
+                                        <td>
+                                            <div>Let's Encrypt</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #14</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://tasmoadmin.home.local">tasmoadmin.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 11th October 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://tasmoadmin-1:80</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #31</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://tasmotaexp.home.local">tasmotaexp.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 11th October 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://tasmota-exporter-tasmota-exporter-1:9092
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #32</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://track.home.local">track.home.local</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 2nd November 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://homeassistant.home.local:8082</div>
+                                        </td>
+                                        <td>
+                                            <div>Custom</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #38</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="avatar d-block"
+                                                style="background-image: url(//www.gravatar.com/avatar/53345348782bec738a220c62714156ab?default=mm)"
+                                                title="Owned by Adrian">
+                                                <span class="avatar-status bg-green"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="wrap">
+
+                                                <span class="tag host-link hover-green"
+                                                    rel="https://track.volag.ro">track.volag.ro</span>
+
+                                            </div>
+                                            <div class="small text-muted">
+                                                Created: 2nd November 2022
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="text-monospace">http://homeassistant.home.local:8082</div>
+                                        </td>
+                                        <td>
+                                            <div>Let's Encrypt</div>
+                                        </td>
+                                        <td>
+                                            <div>Public</div>
+                                        </td>
+                                        <td>
+
+                                            <span class="status-icon bg-success"></span> Online
+
+                                        </td>
+
+                                        <td class="text-right">
+                                            <div class="item-action dropdown">
+                                                <a href="#" data-toggle="dropdown" class="icon"><i
+                                                        class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <span class="dropdown-header">Proxy Host #39</span>
+                                                    <a href="#" class="edit dropdown-item"><i
+                                                            class="dropdown-icon fe fe-edit"></i> Edit</a>
+                                                    <a href="#" class="able dropdown-item"><i
+                                                            class="dropdown-icon fe fe-power"></i> Disable</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a href="#" class="delete dropdown-item"><i
+                                                            class="dropdown-icon fe fe-trash-2"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
