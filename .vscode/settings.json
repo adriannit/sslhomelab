@@ -1,0 +1,6 @@
+{
+  "livePreview.defaultPreviewPath": "/frontend/index.html",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}
