@@ -1,0 +1,15 @@
+version: "3.2"
+services:
+  sslhomelab:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: sslhomelab:1
+    ports:
+      - 81:81/tcp
+      - 53:53/udp
+    restart: unless-stopped
+    volumes:
+      - ./dnsmasq.conf:/etc/dnsmasq.conf
+    cap_add:
+      - NET_ADMIN

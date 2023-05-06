@@ -1,0 +1,89 @@
+<table>≈
+
+    <tr>
+
+        <td>{{ j }}</td>
+
+    </tr>
+
+</table>
+
+<div id="app-content" class="container">
+    <div id="nginx-proxy">
+        <div class="card">
+            <div class="card-status bg-success"></div>
+            <div class="card-header">
+                <h3 class="card-title">Hosts</h3>
+                <div class="card-options">
+                    <form class="search-form" role="search">
+                        <div class="input-icon">
+                            <span class="input-icon-addon">
+                                <i class="fe fe-search"></i>
+                            </span>
+                            <input name="source-query" type="text" value="" class="form-control form-control-sm"
+                                placeholder="Search Host…" aria-label="Search Host…">
+                        </div>
+                    </form>
+                    <a href="#" class="btn btn-outline-success btn-sm ml-2 add-item">Add Proxy Host</a>
+
+                </div>
+            </div>
+            <div class="card-body no-padding min-100">
+                <div class="dimmer">
+                    <div class="loader"></div>
+                    <div class="dimmer-content list-region">
+                        <table class="table table-hover table-outline table-vcenter card-table">
+                            <thead>
+                                <tr>
+                                    <th>Source</th>
+                                    <th>Destination</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for i in A_values %}
+                                <tr>
+                                    {% for j in i %}
+                                    <td>
+                                        <div class="wrap">
+                                            <span class="tag host-link hover-green" rel="https://adrianwxn.go.ro">
+                                                {{ j }}
+                                            </span>
+                                        </div>
+                                        <div class="small text-muted">
+                                            Created: 18th April 2022
+                                        </div>
+                                    </td>
+                                    {% endfor %}
+                                    <td>
+                                        <div>A</div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                                {% for i in CNAME_values %}
+                                <tr>
+                                    {% for j in i %}
+                                    <td>
+                                        <div class="wrap">
+                                            <span class="tag host-link hover-green" rel="https://adrianwxn.go.ro">
+                                                {{ j }}
+                                            </span>
+                                        </div>
+                                        <div class="small text-muted">
+                                            Created: 18th April 2022
+                                        </div>
+                                    </td>
+                                    {% endfor %}
+                                    <td>
+                                        <div>CNAME</div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
